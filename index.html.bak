@@ -275,17 +275,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <th> 解释 </th>
               </tr>
               <tr>
-                <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.AngleDiff"
-                     title="Dota 2 Workshop Tools/Scripting/API/Global.AngleDiff">
-                    AngleDiff</a> </td>
-                <td> <code>float AngleDiff(float ang1, float ang2)</code> </td>
-                <td> 返回两个偏航角度之差 </td>
+                <td><a  href="file:///wiki/Dota_2_Workshop_Tools/Scripting/API/Global.AngleDiff"
+                     title="Dota 2 Workshop Tools/Scripting/API/Global.AngleDiff">AddFOWViewer</a></td>
+                <td>void AddFOWViewer(int int_1, Vector Vector_2, float float_3,
+                  float float_4, bool bool_5)</td>
+                <td>在坐标Vector_2为队伍int_1添加半径为float_3持续时间为float_4的临时战争迷雾修改器，阻挡/不阻挡
+                  单位视野bool_5。队伍int_1在持续时间内对该区域可见。制作类似发条地精的导弹技能很实用。</td>
               </tr>
               <tr>
-                <td  style="vertical-align: top;"><a  href="http://www.dota2rpg.com/forum.php?mod=forumdisplay&amp;fid=132&amp;page=2">資
-                    料來源</a><br>
+                <td><br>
                 </td>
-                <td  style="vertical-align: top;"><br>
+                <td>举例：AddFOWViewer(2,Vector(0,0),1000.0,5.0,false)<br>
+                  说明：天辉方单位在以坐标(0,0)半径1000.0范围内拥有全部视野，持续5秒</td>
+                <td><br>
+                </td>
+              </tr>
+              <tr>
+                <td> <a  href="http://www.dota2rpg.com/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=3563&amp;pid=14242&amp;fromuid=7175"
+                     title="http://www.dota2rpg.com/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=3563&amp;pid=14242&amp;fromuid=7175">
+                    AngleDiff</a> </td>
+                <td> <code>float AngleDiff(float ang1, float ang2)</code> </td>
+                <td>
+                  取得角度ang1和角度ang2之间的角度差ang1-ang2，逆时针为正。角度取值-180~+180或者0~360度为宜。</td>
+              </tr>
+              <tr>
+                <td  style="vertical-align: top; text-align: left;"><br>
+                </td>
+                <td  style="vertical-align: top;">举例：local delta
+                  =AngleDiff(-30,60)&nbsp;&nbsp;&nbsp; --dela=-90<br>
                 </td>
                 <td  style="vertical-align: top;"><br>
                 </td>
