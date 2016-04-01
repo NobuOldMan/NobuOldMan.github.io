@@ -36,16 +36,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
       </h1>
       <div  style="text-align: right;"><br>
       </div>
-      <h1  class="firstHeading"  lang="en">Dota2 Wiki - 資料整理版<br>
-      </h1>
+      <h1  class="firstHeading"  lang="en">Dota2 Wiki - 資料整理版</h1>
       <p></p>
       <h1  class="firstHeading"  lang="en">前言:<br>
-        感謝 <span  style="font-weight: bold;">AMHC論壇</span> 提供研究的空間<span  style="font-weight: bold;"><br>
-        </span>感謝<span  style="font-weight: bold;"> Dota2製作團隊 </span>願意提供遊戲平台<br>
+        感謝 <span  style="font-weight: bold;">AMHC論壇</span> 提供研究的空間<br>
         感謝<span  style="font-weight: bold;"> blockbaster </span>研究的作者<span  style="font-weight: bold;"></span><span
            style="font-weight: bold;"><br>
-          <br>
-        </span></h1>
+        </span>感謝<span  style="font-weight: bold;"> Dota2製作團隊 </span>願意提供這樣的遊戲平
+        台<span  style="font-weight: bold;"><br>
+        </span><br>
+        <span  class="subpages">‎</span></h1>
       <p><br>
       </p>
       <div  id="bodyContent">
@@ -57,7 +57,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <ul>
               <li  class="toclevel-1 tocsection-1"><a  href="#Accessing_the_DOTA_2_Scripting_API_from_Lua"><span
                      class="tocnumber">1</span> <span  class="toctext"><b>Accessing
-                      the DOTA 2 Scripting API from Lua</b></span></a></li>
+                      the
+                      DOTA 2 Scripting API from Lua</b></span></a></li>
               <b> </b>
               <li  class="toclevel-1 tocsection-2"><b><a  href="#Global"><span  class="tocnumber">2</span>
                     <span  class="toctext">Global</span></a></b></li>
@@ -75,10 +76,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                        class="tocnumber">6</span> <span  class="toctext">CDOTABaseAbility</span></a></b></li>
               <b> </b>
               <li  class="toclevel-1 tocsection-7"><b><a  href="#CDOTA_Ability_Animation_Attack"><span
-                       class="tocnumber">7</span> <span  class="toctext">CDOTA_Ability_Animation_Attack</span></a></b></li>
+                       class="tocnumber">7</span>
+                    <span  class="toctext">CDOTA_Ability_Animation_Attack</span></a></b></li>
               <b> </b>
               <li  class="toclevel-1 tocsection-8"><b><a  href="#CDOTA_Ability_Animation_TailSpin"><span
-                       class="tocnumber">8</span> <span  class="toctext">CDOTA_Ability_Animation_TailSpin</span></a></b></li>
+                       class="tocnumber">8</span>
+                    <span  class="toctext">CDOTA_Ability_Animation_TailSpin</span></a></b></li>
               <b> </b>
               <li  class="toclevel-1 tocsection-9"><b><a  href="#CDOTA_Ability_Nian_Leap"><span
                        class="tocnumber">9</span> <span  class="toctext">CDOTA_Ability_Nian_Leap</span></a></b></li>
@@ -249,13 +252,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                        class="tocnumber">64</span> <span  class="toctext">CDOTA_Modifier_Lua</span></a></b></li>
               <b> </b>
               <li  class="toclevel-1 tocsection-65"><b><a  href="#CDOTA_Modifier_Lua_Horizontal_Motion"><span
-                       class="tocnumber">65</span> <span  class="toctext">CDOTA_Modifier_Lua_Horizontal_Motion</span></a></b></li>
+                       class="tocnumber">65</span>
+                    <span  class="toctext">CDOTA_Modifier_Lua_Horizontal_Motion</span></a></b></li>
               <b> </b>
               <li  class="toclevel-1 tocsection-66"><b><a  href="#CDOTA_Modifier_Lua_Motion_Both"><span
-                       class="tocnumber">66</span> <span  class="toctext">CDOTA_Modifier_Lua_Motion_Both</span></a></b></li>
+                       class="tocnumber">66</span>
+                    <span  class="toctext">CDOTA_Modifier_Lua_Motion_Both</span></a></b></li>
               <b> </b>
               <li  class="toclevel-1 tocsection-67"><b><a  href="#CDOTA_Modifier_Lua_Vertical_Motion"><span
-                       class="tocnumber">67</span> <span  class="toctext">CDOTA_Modifier_Lua_Vertical_Motion</span></a></b></li>
+                       class="tocnumber">67</span>
+                    <span  class="toctext">CDOTA_Modifier_Lua_Vertical_Motion</span></a></b></li>
               <b> </b>
               <li  class="toclevel-1 tocsection-68"><b><a  href="#CDOTA_Item_Lua"><span
                        class="tocnumber">68</span> <span  class="toctext">CDOTA_Item_Lua</span></a></b></li>
@@ -277,7 +283,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.AngleDiff"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.AngleDiff">
-                    AngleDiff</a> </td>
+                    AngleDiff</a>
+                </td>
                 <td> <code>float AngleDiff(float ang1, float ang2)</code> </td>
                 <td> 返回兩個偏航角度之差 </td>
               </tr>
@@ -303,7 +310,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     ApplyDamage</a> </td>
                 <td> <code>float ApplyDamage(handle DamageTable)</code> </td>
                 <td> 對單位造成傷害，Table輸入：victim, attacker, damage, damage_type,
-                  damage_flags, ability </td>
+                  damage_flags, ability
+                </td>
                 <td> <br>
                 </td>
               </tr>
@@ -382,7 +390,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.CreateItemOnPositionForLaunch">
                     CreateItemOnPositionForLaunch</a> </td>
                 <td> <code>handle CreateItemOnPositionForLaunch(Vector
-                    Vector_1, handle handle_2)</code> </td>
+                    Vector_1,
+                    handle handle_2)</code> </td>
                 <td> 在給定地點生成一個實際物品。 目標地點可以是空中(但這不會清空這個位置) </td>
               </tr>
               <tr>
@@ -399,7 +408,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     CreateModifierThinker</a> </td>
                 <td> <code>handle CreateModifierThinker(handle handle_1, handle
                     handle_2, string string_3, handle handle_4, Vector Vector_5,
-                    int int_6, bool bool_7)</code> </td>
+                    int int_6,
+                    bool bool_7)</code> </td>
                 <td> 生成一個不和任何NPC相關聯的Modifier。 ( hCaster, hAbility, modifierName,
                   paramTable, vOrigin, nTeamNumber, bPhantomBlocker ) </td>
               </tr>
@@ -424,9 +434,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.CreateTriggerRadiusApproximate">
                     CreateTriggerRadiusApproximate</a> </td>
                 <td> <code>handle CreateTriggerRadiusApproximate(Vector a,
-                    float b)</code> </td>
+                    float
+                    b)</code> </td>
                 <td> CreateTriggerRadiusApproximate( vecOrigin, flRadius
-                  )&nbsp;: 創建並返回一個比給定radius大的AABB觸發器 </td>
+                  )&nbsp;:
+                  創建並返回一個比給定radius大的AABB觸發器 </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.CreateUnitByName"
@@ -442,7 +454,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.CreateUnitByNameAsync">
                     CreateUnitByNameAsync</a> </td>
                 <td> <code>int CreateUnitByNameAsync(string a, Vector b, bool
-                    c, handle d, handle e, int f, handle g)</code> </td>
+                    c,
+                    handle d, handle e, int f, handle g)</code> </td>
                 <td> 用DOTA單位的dota_npc_units.txt中的名字創建它( szUnitName, vLocation,
                   bFindClearSpace, hNPCOwner, hUnitOwner, iTeamNumber, hCallback
                   ) </td>
@@ -458,7 +471,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.cvar_getf"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.cvar getf">
-                    cvar_getf</a> </td>
+                    cvar_getf</a>
+                </td>
                 <td> <code>float cvar_getf(string a)</code> </td>
                 <td> 獲取給定cvar的值，返回float. </td>
               </tr>
@@ -483,14 +497,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <td> <code>void DebugDrawBox(Vector origin, Vector min, Vector
                     max, int r, int g, int b, int a, float duration)</code> </td>
                 <td> 顯示一個debug overlay窗口(origin, mins, maxs, r, g, b, a,
-                  duration ) </td>
+                  duration
+                  ) </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.DebugDrawBoxDirection"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.DebugDrawBoxDirection">
                     DebugDrawBoxDirection</a> </td>
                 <td> <code>void DebugDrawBoxDirection(Vector a, Vector b,
-                    Vector c, Vector d, Vector e, float f, float g)</code> </td>
+                    Vector
+                    c, Vector d, Vector e, float f, float g)</code> </td>
                 <td> 顯示一個debug forward窗口(cent, min, max, forward, vRgb, a,
                   duration) </td>
               </tr>
@@ -516,14 +532,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <td> <code>void DebugDrawLine(Vector a, Vector b, int c, int d,
                     int e, bool f, float g)</code> </td>
                 <td> 顯示一個debug overlay線段origin, target, r, g, b, ztest,
-                  duration) </td>
+                  duration)
+                </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.DebugDrawLine_vCol"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.DebugDrawLine vCol">
                     DebugDrawLine_vCol</a> </td>
                 <td> <code>void DebugDrawLine_vCol(Vector a, Vector b, Vector
-                    c, bool d, float e)</code> </td>
+                    c,
+                    bool d, float e)</code> </td>
                 <td> 使用vec顏色顯示一個debug線段(start, end, vRgb, a, ztest, duration) </td>
               </tr>
               <tr>
@@ -531,7 +549,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.DebugDrawScreenTextLine">
                     DebugDrawScreenTextLine</a> </td>
                 <td> <code>void DebugDrawScreenTextLine(float a, float b, int
-                    c, string d, int e, int f, int g, int h, float i)</code> </td>
+                    c,
+                    string d, int e, int f, int g, int h, float i)</code> </td>
                 <td> 顯示給定行間距（lineoffset）的文字(x, y, lineOffset, text, r, g, b, a,
                   duration) </td>
               </tr>
@@ -557,7 +576,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     DebugScreenTextPretty</a> </td>
                 <td> <code>void DebugScreenTextPretty(float a, float b, int c,
                     string d, int e, int f, int g, int h, float i, string j, int
-                    k, bool l)</code> </td>
+                    k, bool l)</code>
+                </td>
                 <td> 顯示漂亮的debug文字(x, y, lineOffset, text, r, g, b, a, duration,
                   font, size, bBold) </td>
               </tr>
@@ -569,14 +589,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     handle handle_3, float float_4, float float_5, string
                     string_6)</code> </td>
                 <td> (hAttacker, hTarget, hAbility, fDamage, fRadius,
-                  effectName) </td>
+                  effectName)
+                </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.DoEntFire"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.DoEntFire">
-                    DoEntFire</a> </td>
+                    DoEntFire</a>
+                </td>
                 <td> <code>void DoEntFire(string a, string b, string c, float
-                    d, handle e, handle f)EntFire: </code> </td>
+                    d,
+                    handle e, handle f)EntFire: </code> </td>
                 <td> 構造一個實體的輸入/輸出事件( szTarget, szAction, szValue, flDelay,
                   hActivator, hCaller ) </td>
               </tr>
@@ -625,7 +648,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.EmitAnnouncerSoundForPlayer">
                     EmitAnnouncerSoundForPlayer</a> </td>
                 <td> <code>void EmitAnnouncerSoundForPlayer(string string_1,
-                    int int_2)</code> </td>
+                    int
+                    int_2)</code> </td>
                 <td> 對一位玩家播放播音員的音效。 </td>
               </tr>
               <tr>
@@ -718,7 +742,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.FindClearSpaceForUnit">
                     FindClearSpaceForUnit</a> </td>
                 <td> <code>void FindClearSpaceForUnit(handle a, Vector b, bool
-                    c)</code> </td>
+                    c)</code>
+                </td>
                 <td> 在未被占用的地方創建單位 </td>
               </tr>
               <tr>
@@ -727,11 +752,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     FindUnitsInRadius</a> </td>
                 <td> <code>table FindUnitsInRadius(int teamNumber, Vector
                     position, handle cacheUnit, float radius, int teamFilter,
-                    int typeFilter, int flagFilter, int order, bool
-                    canGrowCache)</code> </td>
+                    int
+                    typeFilter, int flagFilter, int order, bool canGrowCache)</code>
+                </td>
                 <td> 在給定範圍內用給定flags搜索單位( iTeamNumber, vPosition, hCacheUnit,
                   flRadius, iTeamFilter, iTypeFilter, iFlagFilter, iOrder,
-                  bCanGrowCache ) </td>
+                  bCanGrowCache
+                  ) </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.FireEntityIOInputNameOnly"
@@ -754,7 +781,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.FireEntityIOInputVec">
                     FireEntityIOInputVec</a> </td>
                 <td> <code>void FireEntityIOInputVec(ehandle a, string b,
-                    Vector c)</code> </td>
+                    Vector
+                    c)</code> </td>
                 <td> 用給定的Vector( hEntity, szActionName, vector )觸發實體的動作輸入 </td>
               </tr>
               <tr>
@@ -775,7 +803,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.FrameTime"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.FrameTime">
-                    FrameTime</a> </td>
+                    FrameTime</a>
+                </td>
                 <td> <code>float FrameTime()</code> </td>
                 <td> 獲取上一幀在服務器上花費的時間 </td>
               </tr>
@@ -787,7 +816,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     unsigned_1)</code> </td>
                 <td>
                   對於指定為DOTA_UNIT_ORDER_CAST_TARGET_TREE下的entindex_target類型的樹，這個方
-                  法用來獲取其實體索 引。 </td>
+                  法用來獲取其實體索
+                  引。 </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.GetFrameCount"
@@ -960,7 +990,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.IsClient"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.IsClient">
-                    IsClient</a> </td>
+                    IsClient</a>
+                </td>
                 <td> <code>bool IsClient()</code> </td>
                 <td> Returns true if this is lua running from the client.dll. </td>
               </tr>
@@ -981,7 +1012,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.IsServer"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.IsServer">
-                    IsServer</a> </td>
+                    IsServer</a>
+                </td>
                 <td> <code>bool IsServer() </code> </td>
                 <td> 當Lua代碼是從Server.dll中被運行的時候，返回True。 </td>
               </tr>
@@ -1007,7 +1039,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     file_path, int motion_controller_type)</code> </td>
                 <td>
                   將一個Lua定義的Modifier和與其相關的類聯繫起來。如果這個Modifier的定義在Vscript根目錄下，那麼第二個
-                  argument (file_path) 可能會被忽略。 </td>
+                  argument
+                  (file_path) 可能會被忽略。 </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.ListenToGameEvent"
@@ -1058,7 +1091,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.PauseGame"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.PauseGame">
-                    PauseGame</a> </td>
+                    PauseGame</a>
+                </td>
                 <td> <code>void PauseGame(bool a)</code> </td>
                 <td> 暫停/開始遊戲 </td>
               </tr>
@@ -1151,7 +1185,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.RandomInt"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.RandomInt">
-                    RandomInt</a> </td>
+                    RandomInt</a>
+                </td>
                 <td> <code>int RandomInt(int a, int b)</code> </td>
                 <td> 獲取範圍內隨機int </td>
               </tr>
@@ -1261,7 +1296,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.Say"> Say</a>
                 </td>
                 <td> <code>void Say(handle entity, string message, bool
-                    teamOnly)</code> </td>
+                    teamOnly)</code>
+                </td>
                 <td> 讓實體說string,是否僅限隊友可見 </td>
               </tr>
               <tr>
@@ -1269,10 +1305,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.ScreenShake">
                     ScreenShake</a> </td>
                 <td> <code>void ScreenShake(Vector a, float b, float c, float
-                    d, float e, int f, bool g)</code> </td>
+                    d,
+                    float e, int f, bool g)</code> </td>
                 <td> 用下列參數開始鏡頭搖晃：vecCenter, flAmplitude, flFrequency,
-                  flDuration, flRadius, eCommand( SHAKE_START = 0, SHAKE_STOP =
-                  1 ), bAirShake </td>
+                  flDuration,
+                  flRadius, eCommand( SHAKE_START = 0, SHAKE_STOP = 1 ),
+                  bAirShake </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.SendFrostivusTimeElapsedToGC"
@@ -1297,7 +1335,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <td> ( DOTAPlayer sendToPlayer, int iMessageType, Entity
                   targetEntity, int iValue, DOTAPlayer sourcePlayer ) -
                   sendToPlayer和sourcePlayer 允許為nil。 -
-                  iMessageType是OVERHEAD_ALERT_分類中的一個。 </td>
+                  iMessageType是OVERHEAD_ALERT_分類中的一個。
+                </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.SendToConsole"
@@ -1427,7 +1466,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.SplineQuaternions">
                     SplineQuaternions</a> </td>
                 <td> <code>Quaternion SplineQuaternions(Quaternion a,
-                    Quaternion b, float c)</code> </td>
+                    Quaternion
+                    b, float c)</code> </td>
                 <td> (quaternion,quaternion,float)非常基礎的v0到v1差值，t屬於[0,1]為參數 </td>
               </tr>
               <tr>
@@ -1528,7 +1568,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <td> <code>bool StringToFile(string a, string b) </code> </td>
                 <td>
                   目錄遍歷似乎無效，字符'.','/'和'\\'被忽略，文件名不能為空，也不能包含忽略字符，否則函數無效並返回false，一次
-                  只能保存一個字符串， 每次調用文件都被覆蓋，文件以一個NUL字符結尾，文件被保存在C:\Program Files
+                  只能保存一個字符串，
+                  每次調用文件都被覆蓋，文件以一個NUL字符結尾，文件被保存在C:\Program Files
                   (x86)\Steam\steamapps\common\dota 2
                   beta\dota_ugc\game\dota\ems，函數用途與FileToString相反 </td>
               </tr>
@@ -1550,15 +1591,18 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.TraceHull"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.TraceHull">
-                    TraceHull</a> </td>
+                    TraceHull</a>
+                </td>
                 <td> <code>bool TraceHull(handle a)</code> </td>
                 <td> 傳遞table - 輸入: start, end, min, max, mask, ignore -- 輸出:
-                  pos, fraction, hit, enthit, startsolid </td>
+                  pos,
+                  fraction, hit, enthit, startsolid </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.TraceLine"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.TraceLine">
-                    TraceLine</a> </td>
+                    TraceLine</a>
+                </td>
                 <td> <code>bool TraceLine(handle a)Pass table - </code> </td>
                 <td> 輸入: startpos, endpos, mask, ignore -- 輸出: pos, fraction,
                   hit, enthit, startsolid </td>
@@ -1568,7 +1612,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Global.UnitFilter">
                     UnitFilter</a> </td>
                 <td> <code>int UnitFilter(handle handle_1, int int_2, int
-                    int_3, int int_4, int int_5)</code> </td>
+                    int_3,
+                    int int_4, int int_5)</code> </td>
                 <td> 當一個單位通過一系列過濾器時進行檢查。 (hNPC, nTargetTeam, nTargetType,
                   nTargetFlags, nTeam </td>
               </tr>
@@ -1609,7 +1654,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     string message, int r, int g, int b, int a, table context)</code>
                 </td>
                 <td> Sends a message to a specific player in the message box
-                  with a context table </td>
+                  with
+                  a context table </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.UTIL_MessageTextAll"
@@ -1666,7 +1712,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.Warning"
                      title="Dota 2 Workshop Tools/Scripting/API/Global.Warning">
-                    Warning</a> </td>
+                    Warning</a>
+                </td>
                 <td> <code>void Warning(string a) </code> </td>
                 <td> 輸出警告 </td>
               </tr>
@@ -1952,7 +1999,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CBaseEntity.Kill"
                      title="Dota 2 Workshop Tools/Scripting/API/CBaseEntity.Kill">
-                    Kill</a> </td>
+                    Kill</a>
+                </td>
                 <td> <code>void Kill() </code> </td>
                 <td> No Description Set </td>
               </tr>
@@ -1997,7 +2045,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CBaseEntity.SetAngularVelocity">
                     SetAngularVelocity</a> </td>
                 <td> <code>void SetAngularVelocity(float pitch, float yaw,
-                    float roll) </code> </td>
+                    float
+                    roll) </code> </td>
                 <td> 設置當前角速度,使用實數顛簸,偏航,搖晃速度 </td>
               </tr>
               <tr>
@@ -2190,7 +2239,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CEntities.FindAllByNameWithin">
                     FindAllByNameWithin</a> </td>
                 <td> <code>table FindAllByNameWithin(string name, Vector
-                    origin, float maxRadius) </code> </td>
+                    origin,
+                    float maxRadius) </code> </td>
                 <td> 在半徑範圍內通過名字來尋找實體. </td>
               </tr>
               <tr>
@@ -2205,7 +2255,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CEntities.FindAllInSphere">
                     FindAllInSphere</a> </td>
                 <td> <code>table FindAllInSphere(Vector origin, float
-                    maxRadius) </code> </td>
+                    maxRadius)
+                  </code> </td>
                 <td> 在(球形)範圍內尋找實體 </td>
               </tr>
               <tr>
@@ -2229,7 +2280,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CEntities.FindByClassnameWithin">
                     FindByClassnameWithin</a> </td>
                 <td> <code>handle FindByClassnameWithin(handle startFrom,
-                    string className, Vector origin, float maxRadius) </code> </td>
+                    string
+                    className, Vector origin, float maxRadius) </code> </td>
                 <td> 在半徑範圍內通過類名尋找實體.傳入nil就從頭進行迭代尋找,傳入之前找到的實體可以以之作為起點開始尋找 </td>
               </tr>
               <tr>
@@ -2291,7 +2343,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CEntities.First"
                      title="Dota 2 Workshop Tools/Scripting/API/CEntities.First">
-                    First</a> </td>
+                    First</a>
+                </td>
                 <td> <code>handle First() </code> </td>
                 <td> 在實體數組或表中開始一個迭代程序 </td>
               </tr>
@@ -2539,7 +2592,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTABaseAbility.CreateVisibilityNode">
                     CreateVisibilityNode</a> </td>
                 <td> <code>void CreateVisibilityNode(Vector a, float b, float
-                    c) </code> </td>
+                    c)
+                  </code> </td>
                 <td> No Description Set </td>
               </tr>
               <tr>
@@ -3592,7 +3646,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_Item.GetCost"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Item.GetCost">
-                    GetCost</a> </td>
+                    GetCost</a>
+                </td>
                 <td> <code>int GetCost()</code> </td>
                 <td> No Description Set </td>
               </tr>
@@ -3669,7 +3724,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_Item.IsItem"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Item.IsItem">
-                    IsItem</a> </td>
+                    IsItem</a>
+                </td>
                 <td> <code>bool IsItem()</code> </td>
                 <td> 判斷是否是物品。 </td>
               </tr>
@@ -3683,7 +3739,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_Item.IsMuted"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Item.IsMuted">
-                    IsMuted</a> </td>
+                    IsMuted</a>
+                </td>
                 <td> <code>bool IsMuted()</code> </td>
                 <td> 判斷是否可以被禁用（？） </td>
               </tr>
@@ -3743,7 +3800,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     LaunchLootInitialHeight</a> </td>
                 <td> <code>void LaunchLootInitialHeight(bool bAutoUse, float
                     flInitialHeight, float flLaunchHeight, float flDuration,
-                    Vector vEndPoint)</code> </td>
+                    Vector
+                    vEndPoint)</code> </td>
                 <td> 設置發射物品時的初始高度。 </td>
               </tr>
               <tr>
@@ -3791,7 +3849,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_Item.Think"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Item.Think">
-                    Think</a> </td>
+                    Think</a>
+                </td>
                 <td> <code>void Think()</code> </td>
                 <td> 判斷此物品 </td>
               </tr>
@@ -3810,7 +3869,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                           <dd>
                             <dl>
                               <dd>extends <a  href="#CBaseAnimating">
-                                  CBaseAnimating</a> </dd>
+                                  CBaseAnimating</a>
+                              </dd>
                             </dl>
                           </dd>
                         </dl>
@@ -4035,7 +4095,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CBasePlayer.Quit"
                      title="Dota 2 Workshop Tools/Scripting/API/CBasePlayer.Quit">
-                    Quit</a> </td>
+                    Quit</a>
+                </td>
                 <td> <code>void Quit()</code> </td>
                 <td> 從腳本中退出遊戲。 </td>
               </tr>
@@ -4054,7 +4115,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                           <dd>
                             <dl>
                               <dd>extends <a  href="#CBaseAnimating">
-                                  CBaseAnimating</a> </dd>
+                                  CBaseAnimating</a>
+                              </dd>
                             </dl>
                           </dd>
                         </dl>
@@ -4960,7 +5022,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA PlayerResource.ReplaceHeroWith">
                     ReplaceHeroWith</a> </td>
                 <td> <code>handle ReplaceHeroWith(int a, string b, int c, int
-                    d) </code> </td>
+                    d)
+                  </code> </td>
                 <td> (玩家ID,英雄職業名,金錢,經驗值) - 將玩家的英雄替換成指定的英雄、金錢和經驗值 </td>
               </tr>
               <tr>
@@ -5065,7 +5128,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA PlayerResource.SetOverrideSelectionEntity">
                     SetOverrideSelectionEntitye</a> </td>
                 <td> <code>void SetOverrideSelectionEntity(int nPlayerID,
-                    handle hEntity) </code> </td>
+                    handle
+                    hEntity) </code> </td>
                 <td> 強制玩家選擇實體。 </td>
               </tr>
               <tr>
@@ -5089,7 +5153,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA PlayerResource.SpendGold">
                     SpendGold</a> </td>
                 <td> <code>void SpendGold(int playerID, int amount, int reason)
-                  </code> </td>
+                  </code>
+                </td>
                 <td> No Description Set </td>
               </tr>
               <tr>
@@ -5169,7 +5234,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     AddNewModifier</a> </td>
                 <td> <code>void AddNewModifier(handle caster, handle
                     optionalSourceAbility, string modifierName, handle
-                    modifierData)</code> </td>
+                    modifierData)</code>
+                </td>
                 <td> 為該單位增加修改器。 </td>
               </tr>
               <tr>
@@ -5259,7 +5325,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.CastAbilityOnPosition">
                     CastAbilityOnPosition</a> </td>
                 <td> <code>void CastAbilityOnPosition(Vector a, handle b, int
-                    c)</code> </td>
+                    c)</code>
+                </td>
                 <td> 對一地點施放技能。 </td>
               </tr>
               <tr>
@@ -6016,14 +6083,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_BaseNPC.Heal"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.Heal">
-                    Heal</a> </td>
+                    Heal</a>
+                </td>
                 <td> <code>void Heal(float amount, handle source)</code> </td>
                 <td> 治療該單位。 </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_BaseNPC.Hold"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.Hold">
-                    Hold</a> </td>
+                    Hold</a>
+                </td>
                 <td> <code>void Hold()</code> </td>
                 <td> 命令單位在原地待命。 </td>
               </tr>
@@ -6380,7 +6449,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_BaseNPC.Kill"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.Kill">
-                    Kill</a> </td>
+                    Kill</a>
+                </td>
                 <td> <code>void Kill(handle a, handle b)</code> </td>
                 <td> 殺死一個單位，參數為使用的技能與攻擊者。 </td>
               </tr>
@@ -6553,13 +6623,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_BaseNPC.Purge"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.Purge">
-                    Purge</a> </td>
+                    Purge</a>
+                </td>
                 <td> <code>void Purge(bool bRemovePositiveBuffs, bool
                     bRemoveDebuffs, bool bFrameOnly, bool bRemoveStuns, bool
                     bRemoveExceptions)</code> </td>
                 <td> (bool RemovePositiveBuffs, bool RemoveDebuffs, bool
                   BuffsCreatedThisFrameOnly, bool RemoveStuns, bool
-                  RemoveExceptions 根據增益、減益等一系列條件，清除單位的BUFF。 </td>
+                  RemoveExceptions
+                  根據增益、減益等一系列條件，清除單位的BUFF。 </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_BaseNPC.ReduceMana"
@@ -6587,7 +6659,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.RemoveHorizontalMotionController">
                     RemoveHorizontalMotionController</a> </td>
                 <td> <code>void RemoveHorizontalMotionController(handle hBuff)
-                  </code> </td>
+                  </code>
+                </td>
                 <td> 移除水平方向上的運動控制器。 </td>
               </tr>
               <tr>
@@ -6609,7 +6682,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.RemoveModifierByNameAndCaster">
                     RemoveModifierByNameAndCaster</a> </td>
                 <td> <code>void RemoveModifierByNameAndCaster(string a, handle
-                    b)</code> </td>
+                    b)</code>
+                </td>
                 <td> 以施法者與修改器名稱移除修改器。 </td>
               </tr>
               <tr>
@@ -6947,7 +7021,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_BaseNPC.Stop"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.Stop">
-                    Stop</a> </td>
+                    Stop</a>
+                </td>
                 <td> <code>void Stop()</code> </td>
                 <td> 使該單位暫停當前動作。 </td>
               </tr>
@@ -6956,7 +7031,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA BaseNPC.SwapAbilities">
                     SwapAbilities</a> </td>
                 <td> <code>void SwapAbilities(string a, string b, bool c, bool
-                    d)</code> </td>
+                    d)</code>
+                </td>
                 <td> 交換兩個技能的字段，並設置其是否生效。 </td>
               </tr>
               <tr>
@@ -7016,7 +7092,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                           <dd>
                             <dl>
                               <dd>extends <a  href="#CDOTA_BaseNPC">
-                                  CDOTA_BaseNPC</a> </dd>
+                                  CDOTA_BaseNPC</a>
+                              </dd>
                             </dl>
                           </dd>
                         </dl>
@@ -7742,7 +7819,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                           <dd>
                             <dl>
                               <dd>extends <a  href="#CDOTA_BaseNPC">
-                                  CDOTA_BaseNPC</a> </dd>
+                                  CDOTA_BaseNPC</a>
+                              </dd>
                             </dl>
                           </dd>
                         </dl>
@@ -7895,7 +7973,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                           <dd>
                             <dl>
                               <dd>extends <a  href="#CDOTA_BaseNPC">
-                                  CDOTA_BaseNPC</a> </dd>
+                                  CDOTA_BaseNPC</a>
+                              </dd>
                             </dl>
                           </dd>
                         </dl>
@@ -8564,7 +8643,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTABaseGameMode.SetModifierGainedFilter">
                     SetModifierGainedFilter</a> </td>
                 <td> <code>void SetModifierGainedFilter(handle hFunction,
-                    handle hContext)</code> </td>
+                    handle
+                    hContext)</code> </td>
                 <td> 設置一個過濾器，用來控制Modifier的獲得, 返回Flase來刪除Modifier </td>
               </tr>
               <tr>
@@ -9241,7 +9321,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CBaseTrigger.Enable"
                      title="Dota 2 Workshop Tools/Scripting/API/CBaseTrigger.Enable">
-                    Enable</a> </td>
+                    Enable</a>
+                </td>
                 <td> <code>void Enable() </code> </td>
                 <td> 允許觸發器 </td>
               </tr>
@@ -9478,7 +9559,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CScriptParticleManager.CreateParticleForTeam">
                     CreateParticleForTeam</a> </td>
                 <td> <code>int CreateParticleForTeam(string string_1, int
-                    int_2, handle handle_3, int int_4) </code> </td>
+                    int_2,
+                    handle handle_3, int int_4) </code> </td>
                 <td> 創建一個僅為某方隊伍播放的粒子特效。 </td>
               </tr>
               <tr>
@@ -9486,7 +9568,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CScriptParticleManager.DestroyParticle">
                     DestroyParticle</a> </td>
                 <td> <code>void DestroyParticle(int particleID, bool
-                    immediately)</code> </td>
+                    immediately)</code>
+                </td>
                 <td> 清除粒子。 </td>
               </tr>
               <tr>
@@ -9542,8 +9625,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     SetParticleControlOrientation</a> </td>
                 <td> <code>void SetParticleControlOrientation(int int_1, int
                     int_2, Vector Vector_3, Vector Vector_4, Vector
-                    Vector_5)(int nFXIndex, int nPoint, vForward, vRight, vUp) </code>
-                </td>
+                    Vector_5)(int nFXIndex,
+                    int nPoint, vForward, vRight, vUp) </code> </td>
                 <td> 設置粒子的三向運動。 </td>
               </tr>
             </tbody>
@@ -9613,7 +9696,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CNativeOutputs.Init"
                      title="Dota 2 Workshop Tools/Scripting/API/CNativeOutputs.Init">
-                    Init</a> </td>
+                    Init</a>
+                </td>
                 <td> <code>void Init(int a) </code> </td>
                 <td> 初始化輸出 </td>
               </tr>
@@ -9821,8 +9905,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTAGamerules.AddMinimapDebugPoint">
                     AddMinimapDebugPoint</a> </td>
                 <td> <code>void AddMinimapDebugPoint(int int_1, Vector
-                    Vector_2, int int_3, int int_4, int int_5, int int_6, float
-                    float_7)</code> </td>
+                    Vector_2,
+                    int int_3, int int_4, int int_5, int int_6, float float_7)</code>
+                </td>
                 <td> 在小地圖上增加一個點。 </td>
               </tr>
               <tr>
@@ -9831,7 +9916,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     AddMinimapDebugPointForTeam</a> </td>
                 <td> <code>void AddMinimapDebugPointForTeam(int int_1, Vector
                     Vector_2, int int_3, int int_4, int int_5, int int_6, float
-                    float_7, int int_8)</code> </td>
+                    float_7,
+                    int int_8)</code> </td>
                 <td> 向某方隊伍在小地圖上增加一個點。 </td>
               </tr>
               <tr>
@@ -10029,8 +10115,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     SendCustomMessage</a> </td>
                 <td> <code>void SendCustomMessage(string message, int teamID,
                     int unknown(1?))</code> </td>
-                <td> 在左側文本框顯示一行文本，通常用來提示死亡、反補隊友、買活等信息。使用嚴格HTML格式
-                  (&gt;;br&lt;;,&gt;;u&lt;;, &gt;;font&lt;;) </td>
+                <td>
+                  在左側文本框顯示一行文本，通常用來提示死亡、反補隊友、買活等信息。使用嚴格HTML格式
+                  (&gt;;br&lt;;,&gt;;u&lt;;,
+                  &gt;;font&lt;;) </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTAGamerules.SendCustomMessageToTeam"
@@ -10074,7 +10162,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTAGamerules.SetCustomGameSetupAutoLaunchDelay">
                     SetCustomGameSetupAutoLaunchDelay</a> </td>
                 <td> <code>void SetCustomGameSetupAutoLaunchDelay(float
-                    float_1)</code> </td>
+                    float_1)</code>
+                </td>
                 <td> 設置自動開始前的等待時間。 </td>
               </tr>
               <tr>
@@ -10099,7 +10188,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTAGamerules.SetCustomGameTeamMaxPlayers">
                     SetCustomGameTeamMaxPlayers</a> </td>
                 <td> <code>void SetCustomGameTeamMaxPlayers(int int_1, int
-                    int_2)</code> </td>
+                    int_2)</code>
+                </td>
                 <td> 在設置階段，設置某方隊伍是否還能被選擇加入 </td>
               </tr>
               <tr>
@@ -10389,7 +10479,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDebugOverlayScriptHelper.Box">
                     Box</a> </td>
                 <td> <code>void Box(Vector a, Vector b, int c, int d, int e,
-                    int f, bool g, float h) </code> </td>
+                    int
+                    f, bool g, float h) </code> </td>
                 <td> 繪製一個世界空間軸向盒。在世界空間中指定邊界 </td>
               </tr>
               <tr>
@@ -10454,7 +10545,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDebugOverlayScriptHelper.Cross3DOriented">
                     Cross3DOriented</a> </td>
                 <td> <code>void Cross3DOriented(Vector a, Quaternion b, float
-                    c, int d, int e, int f, int g, bool h, float i) </code> </td>
+                    c,
+                    int d, int e, int f, int g, bool h, float i) </code> </td>
                 <td> 繪製一個指向的十字。在世界空間中指定出發點 </td>
               </tr>
               <tr>
@@ -10479,7 +10571,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDebugOverlayScriptHelper.EntityAxis">
                     EntityAxis</a> </td>
                 <td> <code>void EntityAxis(ehandle a, float b, bool c, float d)
-                  </code> </td>
+                  </code>
+                </td>
                 <td> 繪製實體源坐標軸 </td>
               </tr>
               <tr>
@@ -10487,7 +10580,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDebugOverlayScriptHelper.EntityBounds">
                     EntityBounds</a> </td>
                 <td> <code>void EntityBounds(ehandle a, int b, int c, int d,
-                    int e, bool f, float g) </code> </td>
+                    int
+                    e, bool f, float g) </code> </td>
                 <td> 繪製實體邊界 </td>
               </tr>
               <tr>
@@ -10534,7 +10628,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDebugOverlayScriptHelper.Line2D">
                     Line2D</a> </td>
                 <td> <code>void Line2D(Vector2D a, Vector2D b, int c, int d,
-                    int e, int f, float g) </code> </td>
+                    int
+                    e, int f, float g) </code> </td>
                 <td> 繪製一個屏幕空間中亮點間連線 </td>
               </tr>
               <tr>
@@ -10549,7 +10644,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDebugOverlayScriptHelper.PushAndClearDebugOverlayScope">
                     PushAndClearDebugOverlayScope</a> </td>
                 <td> <code>void PushAndClearDebugOverlayScope(utlstringtoken a)
-                  </code> </td>
+                  </code>
+                </td>
                 <td> 推入一個蒙版分組用的標記。刪除所有使用該蒙版ID的蒙版 </td>
               </tr>
               <tr>
@@ -10588,7 +10684,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDebugOverlayScriptHelper.SweptBox">
                     SweptBox</a> </td>
                 <td> <code>void SweptBox(Vector a, Vector b, Vector c, Vector
-                    d, Quaternion e, int f, int g, int h, int i, float j) </code>
+                    d,
+                    Quaternion e, int f, int g, int h, int i, float j) </code>
                 </td>
                 <td> 繪製一個掃描盒。在世界空間中指定結束點並在本地空間中指定邊界 </td>
               </tr>
@@ -10605,7 +10702,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDebugOverlayScriptHelper.Texture">
                     Texture</a> </td>
                 <td> <code>void Texture(string a, Vector2D b, Vector2D c, int
-                    d, int e, int f, int g, Vector2D h, Vector2D i, float j) </code>
+                    d,
+                    int e, int f, int g, Vector2D h, Vector2D i, float j) </code>
                 </td>
                 <td> 繪製一個屏幕空間紋理。按照像素對齊 </td>
               </tr>
@@ -10668,7 +10766,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                           <dd>
                             <dl>
                               <dd>extends <a  href="#CBaseAnimating">
-                                  CBaseAnimating</a> </dd>
+                                  CBaseAnimating</a>
+                              </dd>
                             </dl>
                           </dd>
                         </dl>
@@ -10756,7 +10855,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CSceneEntity.Cancel"
                      title="Dota 2 Workshop Tools/Scripting/API/CSceneEntity.Cancel">
-                    Cancel</a> </td>
+                    Cancel</a>
+                </td>
                 <td> <code>void Cancel() </code> </td>
                 <td> 取消場景重播 </td>
               </tr>
@@ -10813,7 +10913,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CSceneEntity.Start"
                      title="Dota 2 Workshop Tools/Scripting/API/CSceneEntity.Start">
-                    Start</a> </td>
+                    Start</a>
+                </td>
                 <td> <code>void Start(handle a) </code> </td>
                 <td> 開始場景重播，參數為激活者實體（activatorEntity） </td>
               </tr>
@@ -10858,7 +10959,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/GridNav.FindPathLength">
                     FindPathLength</a> </td>
                 <td> <code>float FindPathLength(Vector Vector_1, Vector
-                    Vector_2)</code> </td>
+                    Vector_2)</code>
+                </td>
                 <td> 找到兩點間可通過的路徑，並返回路徑長度。如果尋路失敗，將返回-1。 float (vStart, vEnd ) </td>
               </tr>
               <tr>
@@ -10896,7 +10998,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/GridNav.IsNearbyTree">
                     IsNearbyTree</a> </td>
                 <td> <code>bool IsNearbyTree(Vector position, float radius,
-                    bool c) </code> </td>
+                    bool
+                    c) </code> </td>
                 <td> <br>
                 </td>
               </tr>
@@ -10949,7 +11052,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Convars.GetBool"
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.GetBool">
-                    GetBool</a> </td>
+                    GetBool</a>
+                </td>
                 <td> <code>table GetBool(string variableName) </code> </td>
                 <td> GetBool(name)&nbsp;: 將指定的控制台變量（convar）作為boolean返回. </td>
               </tr>
@@ -10970,7 +11074,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Convars.GetFloat"
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.GetFloat">
-                    GetFloat</a> </td>
+                    GetFloat</a>
+                </td>
                 <td> <code>table GetFloat(string name) </code> </td>
                 <td> GetFloat(name)&nbsp;: 將指定的控制台變量（convar）作為float返回. 不存在時返回nil
                 </td>
@@ -10978,14 +11083,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Convars.GetInt"
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.GetInt">
-                    GetInt</a> </td>
+                    GetInt</a>
+                </td>
                 <td> <code>table GetInt(string a) </code> </td>
                 <td> GetInt(name)&nbsp;: 將指定的控制台變量（convar）作為int返回. 不存在時返回nil </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Convars.GetStr"
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.GetStr">
-                    GetStr</a> </td>
+                    GetStr</a>
+                </td>
                 <td> <code>table GetStr(string variableName) </code> </td>
                 <td> GetStr(name)&nbsp;: 將指定的控制台變量（convar）作為string返回. 不存在時返回nil
                 </td>
@@ -11004,14 +11111,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.RegisterConvar">
                     RegisterConvar</a> </td>
                 <td> <code>void RegisterConvar(string name, string
-                    defaultValue, string helpText, int flags) </code> </td>
+                    defaultValue,
+                    string helpText, int flags) </code> </td>
                 <td> RegisterConvar(name, defaultValue, helpString, flags):
                   註冊一個新的控制台變量. </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Convars.SetBool"
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.SetBool">
-                    SetBool</a> </td>
+                    SetBool</a>
+                </td>
                 <td> <code>void SetBool(string variableName, bool value) </code>
                 </td>
                 <td> SetBool(name,val)&nbsp;: 將指定控制台變量（convar）設置為指定bool. </td>
@@ -11019,7 +11128,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Convars.SetFloat"
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.SetFloat">
-                    SetFloat</a> </td>
+                    SetFloat</a>
+                </td>
                 <td> <code>void SetFloat(string variableName, float value) </code>
                 </td>
                 <td> SetFloat(name,val)&nbsp;: 將指定控制台變量（convar）設置為指定float. </td>
@@ -11027,14 +11137,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Convars.SetInt"
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.SetInt">
-                    SetInt</a> </td>
+                    SetInt</a>
+                </td>
                 <td> <code>void SetInt(string a, int b) </code> </td>
                 <td> SetInt(name,val)&nbsp;: 將指定控制台變量（convar）設置為指定int. </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Convars.SetStr"
                      title="Dota 2 Workshop Tools/Scripting/API/Convars.SetStr">
-                    SetStr</a> </td>
+                    SetStr</a>
+                </td>
                 <td> <code>void SetStr(string a, string b) </code> </td>
                 <td> SetStr(name,val)&nbsp;: 將指定控制台變量（convar）設置為指定string. </td>
               </tr>
@@ -11140,7 +11252,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Vector.Length2D"
                      title="Dota 2 Workshop Tools/Scripting/API/Vector.Length2D">
-                    Length2D</a> </td>
+                    Length2D</a>
+                </td>
                 <td> <code>float Length2D() </code> </td>
                 <td> 矢量XY平面上長度（模） </td>
               </tr>
@@ -11286,7 +11399,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                           <dd>
                             <dl>
                               <dd>extends <a  href="#CDOTA_BaseNPC">
-                                  CDOTA_BaseNPC</a> </dd>
+                                  CDOTA_BaseNPC</a>
+                              </dd>
                             </dl>
                           </dd>
                         </dl>
@@ -11334,8 +11448,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Ability DataDriven.ApplyDataDrivenModifier">
                     ApplyDataDrivenModifier</a> </td>
                 <td> <code>handle ApplyDataDrivenModifier(handle hCaster,
-                    handle hTarget, string pszModifierName, handle
-                    hModifierTable) </code> </td>
+                    handle
+                    hTarget, string pszModifierName, handle hModifierTable) </code>
+                </td>
                 <td> 獲取單位的攻擊力。 </td>
               </tr>
               <tr>
@@ -11868,7 +11983,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Ability Lua.OnProjectileHit">
                     OnProjectileHit</a> </td>
                 <td> <code>bool OnProjectileHit(handle hTarget, Vector
-                    vLocation)</code> </td>
+                    vLocation)</code>
+                </td>
                 <td> (HSCRIPT hTarget, Vector vLocation) 投射物撞擊到某目標或者到達指定位置
                   (目標不可用) </td>
               </tr>
@@ -11877,7 +11993,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Ability Lua.OnProjectileHit ExtraData">
                     OnProjectileHit_ExtraData</a> </td>
                 <td> <code>bool OnProjectileHit_ExtraData(handle hTarget,
-                    Vector vLocation, handle table)</code> </td>
+                    Vector
+                    vLocation, handle table)</code> </td>
                 <td> (HSCRIPT hTarget, Vector vLocation, table kv)
                   投射物撞擊到某目標或者到達指定位置 (目標不可用) </td>
               </tr>
@@ -11968,7 +12085,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     string string_3, handle handle_4)</code> </td>
                 <td> 為某玩家建立一個新的自定義用戶界面元素。 ( int PlayerID /*-1 means everyone*/,
                   string ElementID /* should be unique */, string
-                  LayoutFileName, table DialogVariables /* can be nil */ ) </td>
+                  LayoutFileName, table
+                  DialogVariables /* can be nil */ ) </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_CustomUIManager.DynamicHud_Destroy"
@@ -12070,7 +12188,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <td> <code>void AddParticle(int i, bool bDestroyImmediately,
                     bool bStatusEffect, int iPriority, bool bHeroEffect, bool
                     bOverheadEffect)(index, bDestroyImmediately, bStatusEffect,
-                    priority, bHeroEffect, bOverheadEffect） </code> </td>
+                    priority,
+                    bHeroEffect, bOverheadEffect） </code> </td>
                 <td> 增加粒子。 </td>
               </tr>
               <tr>
@@ -12083,7 +12202,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_Buff.Destroy"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Buff.Destroy">
-                    Destroy</a> </td>
+                    Destroy</a>
+                </td>
                 <td> <code>void Destroy()</code> </td>
                 <td> 運行所有相關的移除函數來移除這個Mordifier。 </td>
               </tr>
@@ -12146,7 +12266,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/CDOTA_Buff.GetName"
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Buff.GetName">
-                    GetName</a> </td>
+                    GetName</a>
+                </td>
                 <td> <code>string GetName()</code> </td>
                 <td> 獲取這個Mordifier的名稱。 </td>
               </tr>
@@ -12850,7 +12971,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                      title="Dota 2 Workshop Tools/Scripting/API/CDOTA Item Lua.OnProjectileHit">
                     OnProjectileHit</a> </td>
                 <td> <code>bool OnProjectileHit(handle hTarget, Vector
-                    vLocation)</code> </td>
+                    vLocation)</code>
+                </td>
                 <td> (HSCRIPT hTarget, Vector vLocation) 投射物撞擊到某目標或者到達指定位置
                   (目標不可用) </td>
               </tr>
@@ -12913,10 +13035,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             </tbody>
           </table>
           <b><!-- Saved in parser cache with key developerwiki-mw_:pcache:idhash:30595-0!*!0!!en!2!* and timestamp 20160328060806 and revision id 195131
---> </b></div> <b> </b>
+--> </b></div>
+        <b> </b>
         <div  class="printfooter"><b> Retrieved from "<a  href="https://developer.valvesoftware.com/w/index.php?title=Dota_2_Workshop_Tools:zh-cn/Scripting:zh-cn/API:zh-cn&amp;oldid=195131">https://developer.valvesoftware.com/w/index.php?title=Dota_2_Workshop_Tools:zh-cn/Scripting:zh-cn/API:zh-cn&amp;oldid=195131</a>"
           </b></div>
-        <b> </b> <b> </b> <b> </b></div>
+        <b> </b>
+        <b> </b>
+        <b> </b></div>
       <b> </b></div>
     <b> </b>
     <div  id="mw-navigation"><b> </b>
@@ -12936,8 +13061,10 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hid
       <script  type="text/javascript"  src="/w/extensions/SlimboxThumbs/slimbox/slimboxthumbs.js"></script>
       <script>
 $( window ).on( 'load', function() {makeSlimboxThumbs( jQuery, "/wiki/[^:]+:(.*)", "https://developer.valvesoftware.com/w" ); } );
-</script> <script>if(window.mw){
+</script>
+      <script>if(window.mw){
 mw.config.set({"wgBackendResponseTime":113});
-}</script> </b>
+}</script>
+    </b>
   </body>
 </html>
