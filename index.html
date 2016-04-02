@@ -339,7 +339,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     CalcClosestPointOnEntityOBB</a> </td>
                 <td> <code>Vector CalcClosestPointOnEntityOBB(handle handle_1,
                     Vector Vector_2)</code> </td>
-                <td> 计算实体的OBB上最接近的两个点。 </td>
+                <td>取得坐标Vector到实体handle_1的OBB碰撞盒上最近一点的坐标</td>
+              </tr>
+              <tr>
+                <td><br>
+                </td>
+                <td>举例：local pt = CalClosestPointOnEntityOBB(hero,Vector(0,0,0))<br>
+                  说明：令坐标pt等于英雄hero的OBB碰撞盒上到坐标（0，0，0）最近的一点的坐标</td>
+                <td><br>
+                </td>
               </tr>
               <tr>
                 <td> <a  href="/wiki/Dota_2_Workshop_Tools/Scripting/API/Global.CalcDistanceBetweenEntityOBB"
